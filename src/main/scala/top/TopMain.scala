@@ -35,6 +35,14 @@ class Top extends Module {
   dontTouch(vga.io)
 }
 
+class FireSim extends Module {
+  val io = IO(new Bundle{})
+  val nutshell = Module(new NutShell()(NutCoreConfig()))
+
+  nutshell.io := DontCare
+  //dontTouch(nutshell.io)
+}
+
 object TopMain extends App {
   def parseArgs(info: String, args: Array[String]): String = {
     var target = ""
@@ -50,6 +58,7 @@ object TopMain extends App {
     case "pynq"   => PynqSettings()
     case "axu3cg" => Axu3cgSettings()
     case "PXIe"   => PXIeSettings()
+    case "FireSim" => FireSimSettings()
   } ) ++ ( core match {
     case "inorder"  => InOrderSettings()
     case "ooo"  => OOOSettings()
@@ -66,6 +75,10 @@ object TopMain extends App {
   if (board == "sim") {
     (new ChiselStage).execute(args, Seq(
       ChiselGeneratorAnnotation(() => new SimTop))
+    )
+  } else if (board == "FireSim"){
+    (new ChiselStage).execute(args, Seq(
+      ChiselGeneratorAnnotation(() => new FireSim))
     )
   } else {
     (new ChiselStage).execute(args, Seq(

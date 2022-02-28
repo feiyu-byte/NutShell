@@ -55,6 +55,19 @@ object PynqSettings {
   )
 }
 
+object FireSimSettings {
+  def apply() = Map(
+    "FPGAPlatform" -> true,
+    "NrExtIntr" -> 3,
+    "ResetVector" -> 0x80000000L,
+    "MemMapBase" -> 0x0000000080000000L,
+    "MemMapRegionBits" -> 28,
+    "MMIOBase" -> 0x0000000060000000L,
+    "MMIOSize" -> 0x0000000020000000L,
+    "EnableILA" -> false
+  )
+}
+
 object Axu3cgSettings {
   def apply() = Map(
     "FPGAPlatform" -> true,

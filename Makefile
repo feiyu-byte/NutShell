@@ -11,7 +11,7 @@ SIMTOP = top.TopMain
 IMAGE ?= ready-to-run/linux.bin
 
 DATAWIDTH ?= 64
-BOARD ?= sim  # sim  pynq  axu3cg
+BOARD ?= FireSim  # sim  pynq  axu3cg FireSim
 CORE  ?= inorder  # inorder  ooo  embedded
 
 .DEFAULT_GOAL = verilog
