@@ -61,9 +61,10 @@ object FireSimSettings {
     "NrExtIntr" -> 3,
     "ResetVector" -> 0x80000000L,
     "MemMapBase" -> 0x0000000080000000L,
-    "MemMapRegionBits" -> 28,
+    "MemMapRegionBits" -> 31,
     "MMIOBase" -> 0x0000000060000000L,
     "MMIOSize" -> 0x0000000020000000L,
+    "EnableDebug" -> false,
     "EnableILA" -> false
   )
 }

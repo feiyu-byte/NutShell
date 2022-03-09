@@ -3,148 +3,476 @@
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|LockingArbiter",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/SimpleBusCrossbarNto1:SimpleBusCrossbarNto1/inputArb:LockingArbiter",
-    "index":0.24719101123595505
+    "index":0.24444444444444444
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|SimpleBusCrossbarNto1",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/SimpleBusCrossbarNto1:SimpleBusCrossbarNto1",
-    "index":0.25842696629213485
+    "index":0.25555555555555554
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|Arbiter",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/Cache:Cache/s3:CacheStage3/metaWriteArb:Arbiter",
-    "index":0.3595505617977528
+    "index":0.35555555555555557
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|Arbiter_1",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/Cache:Cache/s3:CacheStage3/dataWriteArb:Arbiter_1",
-    "index":0.3707865168539326
+    "index":0.36666666666666664
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|SRAMTemplate_1",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/Cache:Cache/metaArray:SRAMTemplateWithArbiter/ram:SRAMTemplate_1",
-    "index":0.39325842696629215
+    "index":0.3888888888888889
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|Arbiter_2",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/Cache:Cache/metaArray:SRAMTemplateWithArbiter/readArb:Arbiter_2",
-    "index":0.4044943820224719
+    "index":0.4
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|SRAMTemplateWithArbiter",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/Cache:Cache/metaArray:SRAMTemplateWithArbiter",
-    "index":0.4157303370786517
+    "index":0.4111111111111111
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|SRAMTemplate_2",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/Cache:Cache/dataArray:SRAMTemplateWithArbiter_1/ram:SRAMTemplate_2",
-    "index":0.42696629213483145
+    "index":0.4222222222222222
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|Arbiter_3",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/Cache:Cache/dataArray:SRAMTemplateWithArbiter_1/readArb:Arbiter_3",
-    "index":0.43820224719101125
+    "index":0.43333333333333335
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|SRAMTemplateWithArbiter_1",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/Cache:Cache/dataArray:SRAMTemplateWithArbiter_1",
-    "index":0.449438202247191
+    "index":0.4444444444444444
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|Arbiter_5",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/Cache_1:Cache_1/s3:CacheStage3_1/metaWriteArb:Arbiter",
-    "index":0.550561797752809
+    "index":0.5444444444444444
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|Arbiter_6",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/Cache_1:Cache_1/s3:CacheStage3_1/dataWriteArb:Arbiter_1",
-    "index":0.5617977528089888
+    "index":0.5555555555555556
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|SRAMTemplate_3",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/Cache_1:Cache_1/metaArray:SRAMTemplateWithArbiter/ram:SRAMTemplate_1",
-    "index":0.5842696629213483
+    "index":0.5777777777777777
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|Arbiter_7",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/Cache_1:Cache_1/metaArray:SRAMTemplateWithArbiter/readArb:Arbiter_2",
-    "index":0.5955056179775281
+    "index":0.5888888888888889
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|SRAMTemplateWithArbiter_2",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/Cache_1:Cache_1/metaArray:SRAMTemplateWithArbiter",
-    "index":0.6067415730337079
+    "index":0.6
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|SRAMTemplate_4",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/Cache_1:Cache_1/dataArray:SRAMTemplateWithArbiter_1/ram:SRAMTemplate_2",
-    "index":0.6179775280898876
+    "index":0.6111111111111112
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|Arbiter_8",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/Cache_1:Cache_1/dataArray:SRAMTemplateWithArbiter_1/readArb:Arbiter_3",
-    "index":0.6292134831460674
+    "index":0.6222222222222222
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|SRAMTemplateWithArbiter_3",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/Cache_1:Cache_1/dataArray:SRAMTemplateWithArbiter_1",
-    "index":0.6404494382022472
+    "index":0.6333333333333333
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|Arbiter_9",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/Cache_1:Cache_1/arb:Arbiter_9",
-    "index":0.651685393258427
+    "index":0.6444444444444445
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|LockingArbiter_2",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/xbar:SimpleBusCrossbarNto1/inputArb:LockingArbiter",
-    "index":0.6966292134831461
+    "index":0.6888888888888889
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|SimpleBusCrossbarNto1_2",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/xbar:SimpleBusCrossbarNto1",
-    "index":0.7078651685393258
+    "index":0.7
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|Arbiter_14",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/Cache:Cache_2/arb:Arbiter_9",
-    "index":0.8764044943820225
+    "index":0.8666666666666667
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|SimpleBus2AXI4Converter_2",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/SimpleBus2AXI4Converter_2:SimpleBus2AXI4Converter_2",
-    "index":0.9550561797752809
+    "index":0.9444444444444444
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|SimpleBus2AXI4Converter_3",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/SimpleBus2AXI4Converter_3:SimpleBus2AXI4Converter_2",
-    "index":0.9775280898876404
+    "index":0.9666666666666667
   },
   {
     "class":"firrtl.passes.memlib.InferReadWriteAnnotation$"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_aw_ready"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_aw_valid"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_aw_bits_addr"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_aw_bits_prot"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_aw_bits_id"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_aw_bits_user"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_aw_bits_len"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_aw_bits_size"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_aw_bits_burst"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_aw_bits_lock"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_aw_bits_cache"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_aw_bits_qos"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_w_ready"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_w_valid"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_w_bits_data"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_w_bits_strb"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_w_bits_last"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_b_ready"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_b_valid"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_b_bits_resp"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_b_bits_id"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_b_bits_user"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_ar_ready"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_ar_valid"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_ar_bits_addr"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_ar_bits_prot"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_ar_bits_id"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_ar_bits_user"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_ar_bits_len"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_ar_bits_size"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_ar_bits_burst"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_ar_bits_lock"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_ar_bits_cache"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_ar_bits_qos"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_r_ready"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_r_valid"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_r_bits_resp"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_r_bits_data"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_r_bits_last"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_r_bits_id"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_fromCore_r_bits_user"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_aw_ready"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_aw_valid"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_aw_bits_addr"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_aw_bits_prot"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_aw_bits_id"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_aw_bits_user"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_aw_bits_len"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_aw_bits_size"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_aw_bits_burst"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_aw_bits_lock"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_aw_bits_cache"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_aw_bits_qos"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_w_ready"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_w_valid"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_w_bits_data"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_w_bits_strb"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_w_bits_last"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_b_ready"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_b_valid"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_b_bits_resp"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_b_bits_id"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_b_bits_user"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_ar_ready"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_ar_valid"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_ar_bits_addr"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_ar_bits_prot"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_ar_bits_id"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_ar_bits_user"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_ar_bits_len"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_ar_bits_size"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_ar_bits_burst"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_ar_bits_lock"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_ar_bits_cache"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_ar_bits_qos"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_r_ready"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_r_valid"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_r_bits_resp"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_r_bits_data"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_r_bits_last"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_r_bits_id"
+  },
+  {
+    "class":"firrtl.transforms.DontTouchAnnotation",
+    "target":"~FireSim|AXI4WARPConverter>io_toMem_r_bits_user"
   },
   {
     "class":"firrtl.transforms.DontTouchAnnotation",
@@ -902,7 +1230,7 @@
     "class":"firrtl.transforms.DontTouchAnnotation",
     "target":"~FireSim|IFU_inorder>REG_3"
   },
-    {
+  {
     "class":"midas.widgets.SerializableBridgeAnnotation",
     "target":"~FireSim|PeekPokeBridge",
     "channelNames":[

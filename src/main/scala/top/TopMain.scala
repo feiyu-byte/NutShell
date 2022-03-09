@@ -20,6 +20,7 @@ import nutcore.NutCoreConfig
 import system.NutShell
 import device.{AXI4VGA}
 import sim.SimTop
+import bus.axi4._
 
 import chisel3._
 import chisel3.stage._
@@ -40,7 +41,11 @@ class FireSim extends Module {
   val nutshell = Module(new NutShell()(NutCoreConfig()))
 
   nutshell.io := DontCare
-  //dontTouch(nutshell.io)
+  dontTouch(nutshell.io)
+  val converter = Module(new AXI4WARPConverter)
+  nutshell.io.mem <> converter.io.fromCore
+  converter.io.toMem := DontCare
+  dontTouch(converter.io)
 }
 
 object TopMain extends App {

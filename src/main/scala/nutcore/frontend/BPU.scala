@@ -90,7 +90,7 @@ class BPU_ooo extends NutCoreModule {
   BoringUtils.addSink(flushTLB, "MOUFlushTLB")
   (0 to 3).map(i => (btb(i).reset := reset.asBool || (flushBTB || flushTLB)))
 
-  Debug(reset.asBool || (flushBTB || flushTLB), "[BPU-RESET] bpu-reset flushBTB:%d flushTLB:%d\n", flushBTB, flushTLB)
+  //Debug(reset.asBool || (flushBTB || flushTLB), "[BPU-RESET] bpu-reset flushBTB:%d flushTLB:%d\n", flushBTB, flushTLB)
 
   (0 to 3).map(i => (btb(i).io.r.req.valid := io.in.pc.valid))
   (0 to 3).map(i => (btb(i).io.r.req.bits.setIdx := btbAddr.getIdx(io.in.pc.bits)))
@@ -179,7 +179,7 @@ class BPU_ooo extends NutCoreModule {
   io.out.target := PriorityMux(io.brIdx, target)
   io.out.valid := io.brIdx.asUInt.orR
   io.out.rtype := 0.U
-  Debug(io.out.valid, "[BPU] pc %x io.brIdx.asUInt %b phtTaken %x %x %x %x valid %x %x %x %x\n", pcLatch, io.brIdx.asUInt, phtTaken(0), phtTaken(1), phtTaken(2), phtTaken(3), btbRead(0).valid, btbRead(1).valid, btbRead(2).valid, btbRead(3).valid)
+  //Debug(io.out.valid, "[BPU] pc %x io.brIdx.asUInt %b phtTaken %x %x %x %x valid %x %x %x %x\n", pcLatch, io.brIdx.asUInt, phtTaken(0), phtTaken(1), phtTaken(2), phtTaken(3), btbRead(0).valid, btbRead(1).valid, btbRead(2).valid, btbRead(3).valid)
 
   // io.out.valid := btbHit && Mux(btbRead._type === BTBtype.B, phtTaken, true.B) && !crosslineJump || crosslineJumpLatch && !flush && !crosslineJump
   // Note: 
@@ -306,7 +306,7 @@ class BPU_inorder extends NutCoreModule {
   BoringUtils.addSink(flushBTB, "MOUFlushICache")
   BoringUtils.addSink(flushTLB, "MOUFlushTLB")
   btb.reset := reset.asBool || (flushBTB || flushTLB)
-  Debug(reset.asBool || (flushBTB || flushTLB), "[BPU-RESET] bpu-reset flushBTB:%d flushTLB:%d\n", flushBTB, flushTLB)
+  //Debug(reset.asBool || (flushBTB || flushTLB), "[BPU-RESET] bpu-reset flushBTB:%d flushTLB:%d\n", flushBTB, flushTLB)
 
   btb.io.r.req.valid := io.in.pc.valid
   btb.io.r.req.bits.setIdx := btbAddr.getIdx(io.in.pc.bits)
@@ -328,8 +328,8 @@ class BPU_inorder extends NutCoreModule {
   io.crosslineJump := crosslineJump
   // val crosslineJumpLatch = RegNext(crosslineJump)
   // val crosslineJumpTarget = RegEnable(btbRead.target, crosslineJump)
-  Debug(btbHit, "[BTBHT1] %d pc=%x tag=%x,%x index=%x bridx=%x tgt=%x,%x flush %x type:%x\n", GTimer(), pcLatch, btbRead.tag, btbAddr.getTag(pcLatch), btbAddr.getIdx(pcLatch), btbRead.brIdx, btbRead.target, io.out.target, flush,btbRead._type)
-  Debug(btbHit, "[BTBHT2] btbRead.brIdx %x mask %x\n", btbRead.brIdx, Cat(crosslineJump, Fill(2, io.out.valid)))
+  //Debug(btbHit, "[BTBHT1] %d pc=%x tag=%x,%x index=%x bridx=%x tgt=%x,%x flush %x type:%x\n", GTimer(), pcLatch, btbRead.tag, btbAddr.getTag(pcLatch), btbAddr.getIdx(pcLatch), btbRead.brIdx, btbRead.target, io.out.target, flush,btbRead._type)
+  //Debug(btbHit, "[BTBHT2] btbRead.brIdx %x mask %x\n", btbRead.brIdx, Cat(crosslineJump, Fill(2, io.out.valid)))
   // Debug(btbHit, "[BTBHT5] btbReqValid:%d btbReqSetIdx:%x\n",btb.io.r.req.valid, btb.io.r.req.bits.setId)
   
   // PHT
@@ -350,7 +350,7 @@ class BPU_inorder extends NutCoreModule {
   val btbWrite = WireInit(0.U.asTypeOf(btbEntry()))
   BoringUtils.addSink(req, "bpuUpdateReq")
 
-  Debug(req.valid, "[BTBUP] pc=%x tag=%x index=%x bridx=%x tgt=%x type=%x\n", req.pc, btbAddr.getTag(req.pc), btbAddr.getIdx(req.pc), Cat(req.pc(1), ~req.pc(1)), req.actualTarget, req.btbType)
+  //Debug(req.valid, "[BTBUP] pc=%x tag=%x index=%x bridx=%x tgt=%x type=%x\n", req.pc, btbAddr.getTag(req.pc), btbAddr.getIdx(req.pc), Cat(req.pc(1), ~req.pc(1)), req.actualTarget, req.btbType)
 
     //val fflag = req.btbType===3.U && btb.io.w.req.valid && btb.io.w.req.bits.setIdx==="hc9".U
     //when(fflag && GTimer()>2888000.U) {
