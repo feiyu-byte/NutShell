@@ -1230,7 +1230,7 @@
     "class":"firrtl.transforms.DontTouchAnnotation",
     "target":"~FireSim|IFU_inorder>REG_3"
   },
-  {
+    {
     "class":"midas.widgets.SerializableBridgeAnnotation",
     "target":"~FireSim|PeekPokeBridge",
     "channelNames":[
