@@ -42,7 +42,7 @@ class FireSim extends Module {
 
   nutshell.io := DontCare
   dontTouch(nutshell.io)
-  val converter = Module(new AXI4WARPConverter)
+  val converter = Module(new AXI4WRAPConverter)
   nutshell.io.mem <> converter.io.fromCore
   converter.io.toMem := DontCare
   dontTouch(converter.io)

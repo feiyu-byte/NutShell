@@ -5,7 +5,7 @@ import chisel3.util._
 
 
 
-class AXI4WARPConverter (val dataBits: Int = AXI4Parameters.dataBits, val idBits: Int = AXI4Parameters.idBits) extends Module {
+class AXI4WRAPConverter (val dataBits: Int = AXI4Parameters.dataBits, val idBits: Int = AXI4Parameters.idBits) extends Module {
 	
 	val io = IO(new Bundle{
 		val fromCore = Flipped(new AXI4(dataBits,idBits))
@@ -24,11 +24,13 @@ class AXI4WARPConverter (val dataBits: Int = AXI4Parameters.dataBits, val idBits
 	when(io.toMem.w.fire() && io.toMem.w.bits.last){w_state := s_WriteBResp}
         when(io.fromCore.b.fire()){w_state := s_Idle}
 
-	val writeNotWRAP = RegEnable(io.fromCore.aw.bits.burst =/= AXI4Parameters.BURST_WRAP, io.fromCore.aw.valid)
-	val readNotWRAP = RegEnable(io.toMem.ar.bits.burst =/= AXI4Parameters.BURST_WRAP , io.fromCore.ar.valid)
-
-	when(io.fromCore.b.fire()){writeNotWRAP := false.B}
-	when(io.toMem.r.bits.last && io.toMem.r.fire()){readNotWRAP := false.B}
+	//val writeNotWRAP = RegEnable(io.fromCore.aw.bits.burst =/= AXI4Parameters.BURST_WRAP, io.fromCore.aw.valid)
+	//val readNotWRAP = RegEnable(io.toMem.ar.bits.burst =/= AXI4Parameters.BURST_WRAP , io.fromCore.ar.valid)
+          val writeNotWRAP = RegNext(io.fromCore.aw.bits.burst =/= 2.U)
+          val readNotWRAP  = RegNext(io.fromCore.ar.bits.burst =/= 2.U)
+        
+	//when(io.fromCore.b.fire()){writeNotWRAP := false.B}
+	//when(io.toMem.r.bits.last && io.toMem.r.fire()){readNotWRAP := false.B}
 
 	val awPaddingWidth = if(dataBits == 64) 6 else 5//log2Ceil((io.fromCore.aw.bits.len + 1.U)*(1.U << io.fromCore.aw.bits.size)) //log2((7+1)*(1<<3))=6
 	val arPaddingWidth = if(dataBits == 64) 6 else 5//log2Ceil((io.fromCore.ar.bits.len + 1.U)*(1.U << io.fromCore.ar.bits.size))
@@ -40,8 +42,8 @@ class AXI4WARPConverter (val dataBits: Int = AXI4Parameters.dataBits, val idBits
 	val wstrbBuffer = Reg(Vec(8,UInt((dataBits/8).W)))
 	val rdataBuffer = Reg(Vec(8,UInt(dataBits.W)))
 
-	val (readBeatsCnt,rcond) = Counter(io.toMem.r.fire()||io.fromCore.r.fire(),7)
-	val (writeBeatsCnt,wcond) = Counter(io.toMem.w.fire()||io.fromCore.w.fire(),7)
+	val (readBeatsCnt,rcond) = Counter(io.toMem.r.fire()||io.fromCore.r.fire(),8)
+	val (writeBeatsCnt,wcond) = Counter(io.toMem.w.fire()||io.fromCore.w.fire(),8)
 
 	when(io.fromCore.aw.fire()){
 		writeBeatsCnt := io.fromCore.aw.bits.addr(awPaddingWidth-1,3)

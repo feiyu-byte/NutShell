@@ -3,145 +3,145 @@
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|LockingArbiter",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/SimpleBusCrossbarNto1:SimpleBusCrossbarNto1/inputArb:LockingArbiter",
-    "index":0.24444444444444444
+    "index":0.2608695652173913
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|SimpleBusCrossbarNto1",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/SimpleBusCrossbarNto1:SimpleBusCrossbarNto1",
-    "index":0.25555555555555554
+    "index":0.2717391304347826
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|Arbiter",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/Cache:Cache/s3:CacheStage3/metaWriteArb:Arbiter",
-    "index":0.35555555555555557
+    "index":0.3695652173913043
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|Arbiter_1",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/Cache:Cache/s3:CacheStage3/dataWriteArb:Arbiter_1",
-    "index":0.36666666666666664
+    "index":0.3804347826086957
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|SRAMTemplate_1",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/Cache:Cache/metaArray:SRAMTemplateWithArbiter/ram:SRAMTemplate_1",
-    "index":0.3888888888888889
+    "index":0.40217391304347827
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|Arbiter_2",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/Cache:Cache/metaArray:SRAMTemplateWithArbiter/readArb:Arbiter_2",
-    "index":0.4
+    "index":0.41304347826086957
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|SRAMTemplateWithArbiter",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/Cache:Cache/metaArray:SRAMTemplateWithArbiter",
-    "index":0.4111111111111111
+    "index":0.42391304347826086
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|SRAMTemplate_2",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/Cache:Cache/dataArray:SRAMTemplateWithArbiter_1/ram:SRAMTemplate_2",
-    "index":0.4222222222222222
+    "index":0.43478260869565216
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|Arbiter_3",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/Cache:Cache/dataArray:SRAMTemplateWithArbiter_1/readArb:Arbiter_3",
-    "index":0.43333333333333335
+    "index":0.44565217391304346
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|SRAMTemplateWithArbiter_1",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/Cache:Cache/dataArray:SRAMTemplateWithArbiter_1",
-    "index":0.4444444444444444
+    "index":0.45652173913043476
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|Arbiter_5",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/Cache_1:Cache_1/s3:CacheStage3_1/metaWriteArb:Arbiter",
-    "index":0.5444444444444444
+    "index":0.5543478260869565
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|Arbiter_6",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/Cache_1:Cache_1/s3:CacheStage3_1/dataWriteArb:Arbiter_1",
-    "index":0.5555555555555556
+    "index":0.5652173913043478
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|SRAMTemplate_3",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/Cache_1:Cache_1/metaArray:SRAMTemplateWithArbiter/ram:SRAMTemplate_1",
-    "index":0.5777777777777777
+    "index":0.5869565217391305
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|Arbiter_7",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/Cache_1:Cache_1/metaArray:SRAMTemplateWithArbiter/readArb:Arbiter_2",
-    "index":0.5888888888888889
+    "index":0.5978260869565217
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|SRAMTemplateWithArbiter_2",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/Cache_1:Cache_1/metaArray:SRAMTemplateWithArbiter",
-    "index":0.6
+    "index":0.6086956521739131
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|SRAMTemplate_4",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/Cache_1:Cache_1/dataArray:SRAMTemplateWithArbiter_1/ram:SRAMTemplate_2",
-    "index":0.6111111111111112
+    "index":0.6195652173913043
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|Arbiter_8",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/Cache_1:Cache_1/dataArray:SRAMTemplateWithArbiter_1/readArb:Arbiter_3",
-    "index":0.6222222222222222
+    "index":0.6304347826086957
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|SRAMTemplateWithArbiter_3",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/Cache_1:Cache_1/dataArray:SRAMTemplateWithArbiter_1",
-    "index":0.6333333333333333
+    "index":0.6413043478260869
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|Arbiter_9",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/nutcore:NutCore/Cache_1:Cache_1/arb:Arbiter_9",
-    "index":0.6444444444444445
+    "index":0.6521739130434783
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|LockingArbiter_2",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/xbar:SimpleBusCrossbarNto1/inputArb:LockingArbiter",
-    "index":0.6888888888888889
+    "index":0.6956521739130435
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|SimpleBusCrossbarNto1_2",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/xbar:SimpleBusCrossbarNto1",
-    "index":0.7
+    "index":0.7065217391304348
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|Arbiter_14",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/Cache:Cache_2/arb:Arbiter_9",
-    "index":0.8666666666666667
+    "index":0.8695652173913043
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|SimpleBus2AXI4Converter_2",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/SimpleBus2AXI4Converter_2:SimpleBus2AXI4Converter_2",
-    "index":0.9444444444444444
+    "index":0.9456521739130435
   },
   {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~FireSim|SimpleBus2AXI4Converter_3",
     "duplicate":"~FireSim|FireSim/nutshell:NutShell/SimpleBus2AXI4Converter_3:SimpleBus2AXI4Converter_2",
-    "index":0.9666666666666667
+    "index":0.967391304347826
   },
   {
     "class":"firrtl.passes.memlib.InferReadWriteAnnotation$"
@@ -1023,6 +1023,12 @@
     "target":"~FireSim|WBU>falseWire"
   },
   {
+    "class":"firrtl.transforms.BlackBoxInlineAnno",
+    "target":"FireSim.DifftestRunaheadRedirectEvent",
+    "name":"DifftestRunaheadRedirectEvent.v",
+    "text":"\nmodule DifftestRunaheadRedirectEvent(\n  input         io_clock,\ninput  [ 7:0] io_coreid,\ninput         io_valid,\ninput  [63:0] io_pc,\ninput  [63:0] io_target_pc,\ninput  [63:0] io_checkpoint_id\n);\n`ifndef SYNTHESIS\n\nimport \"DPI-C\" function void v_difftest_RunaheadRedirectEvent (\ninput     byte io_coreid,\ninput      bit io_valid,\ninput  longint io_pc,\ninput  longint io_target_pc,\ninput  longint io_checkpoint_id\n);\n\n  always @(posedge io_clock) begin\n    v_difftest_RunaheadRedirectEvent (io_coreid,io_valid,io_pc,io_target_pc,io_checkpoint_id);\n  end\n`endif\nendmodule\n"
+  },
+  {
     "class":"firrtl.transforms.DontTouchAnnotation",
     "target":"~FireSim|EXU>_T_79"
   },
@@ -1223,6 +1229,12 @@
     "target":"~FireSim|ISU>_T_103"
   },
   {
+    "class":"firrtl.transforms.BlackBoxInlineAnno",
+    "target":"FireSim.DifftestRunaheadEvent",
+    "name":"DifftestRunaheadEvent.v",
+    "text":"\nmodule DifftestRunaheadEvent(\n  input         io_clock,\ninput  [ 7:0] io_coreid,\ninput  [ 7:0] io_index,\ninput         io_valid,\ninput         io_branch,\ninput         io_may_replay,\ninput  [63:0] io_pc,\ninput  [63:0] io_checkpoint_id\n);\n`ifndef SYNTHESIS\n\nimport \"DPI-C\" function void v_difftest_RunaheadEvent (\ninput     byte io_coreid,\ninput     byte io_index,\ninput      bit io_valid,\ninput      bit io_branch,\ninput      bit io_may_replay,\ninput  longint io_pc,\ninput  longint io_checkpoint_id\n);\n\n  always @(posedge io_clock) begin\n    v_difftest_RunaheadEvent (io_coreid,io_index,io_valid,io_branch,io_may_replay,io_pc,io_checkpoint_id);\n  end\n`endif\nendmodule\n"
+  },
+  {
     "class":"firrtl.transforms.DontTouchAnnotation",
     "target":"~FireSim|IFU_inorder>_T_58"
   },
@@ -1230,7 +1242,15 @@
     "class":"firrtl.transforms.DontTouchAnnotation",
     "target":"~FireSim|IFU_inorder>REG_3"
   },
-    {
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"build"
+  },
+  {
     "class":"midas.widgets.SerializableBridgeAnnotation",
     "target":"~FireSim|PeekPokeBridge",
     "channelNames":[
@@ -1767,13 +1787,5 @@
   {
     "class":"firrtl.stage.RunFirrtlTransformAnnotation",
     "transform":"firrtl.transforms.BlackBoxSourceHelper"
-  },
-  {
-    "class":"firrtl.EmitCircuitAnnotation",
-    "emitter":"firrtl.VerilogEmitter"
-  },
-  {
-    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
-    "targetDir":"build"
   }
 ]
