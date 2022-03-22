@@ -16,7 +16,7 @@
 
 package system
 
-import nutcore.{NutCore, NutCoreConfig, HasNutCoreParameter, AddressSpace, Cache, CacheConfig}
+import nutcore.{NutCore_A,NutCore_B, NutCoreConfig, HasNutCoreParameter, AddressSpace, Cache, CacheConfig}
 import bus.axi4.{AXI4, AXI4Lite}
 import bus.simplebus._
 import utils._
@@ -39,12 +39,7 @@ class Prefetcher extends Module with HasPrefetcherParameter {
   prefetchReq.cmd := SimpleBusCmd.prefetch
   prefetchReq.addr := io.in.bits.addr + XLEN.U
 
-  //lastReqAddr not be initted, in vivado simulation maybe fail
-  //val lastReqAddr = (RegEnable(io.in.bits.addr, io.in.fire()))
-  val lastReqAddr = RegInit(0.U(AddrBits.W))
-  when (io.in.fire()) {
-     lastReqAddr := io.in.bits.addr
-  }
+  val lastReqAddr = (RegEnable(io.in.bits.addr, io.in.fire()))
   val thisReqAddr = io.in.bits.addr
   val lineMask = Cat(Fill(AddrBits - 6, 1.U(1.W)), 0.U(6.W))
   val neqAddr = (thisReqAddr & lineMask) =/= (lastReqAddr & lineMask)

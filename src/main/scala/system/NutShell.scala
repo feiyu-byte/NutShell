@@ -41,26 +41,46 @@ class ILABundle extends NutCoreBundle {
   val InstrCnt = UInt(64.W)
 }
 
-class NutShell(implicit val p: NutCoreConfig) extends Module with HasSoCParameter {
+class NutShell(implicit val p: NutCoreConfig) extends Module with HasSoCParameter with HasNutCoreConst{
   val io = IO(new Bundle{
     val mem = new AXI4
     val mmio = (if (p.FPGAPlatform) { new AXI4 } else { new SimpleBusUC })
-    val frontend = Flipped(new AXI4)
+    //val frontend = Flipped(new AXI4)
     val meip = Input(UInt(Settings.getInt("NrExtIntr").W))
     val ila = if (p.FPGAPlatform && EnableILA) Some(Output(new ILABundle)) else None
+    val icache = Flipped(new SimpleBusUC(userBits = ICacheUserBundleWidth))
+    val dcache = Flipped(if(EnableOutOfOrderExec) {new SimpleBusUC(userBits = DCacheUserBundleWidth)} else {new SimpleBusUC})
+    
+    val flush = Input(UInt(2.W))
+    val iempty = Output(Bool())
+    val dempty = Output(Bool())
   })
 
-  val nutcore = Module(new NutCore)
+  val nutcore = Module(new NutCore_B)
+  //val nutcore_A = Module(new NutCore_A)
   val cohMg = Module(new CoherenceManager)
   val xbar = Module(new SimpleBusCrossbarNto1(2))
+  // nutcore_A.io.frontend := DontCare
+  // nutcore_A.io.icache <> nutcore.io.icache
+  // nutcore_A.io.dcache <> nutcore.io.dcache
+  // nutcore_A.io.dempty := nutcore.io.dempty
+  // nutcore_A.io.iempty := nutcore.io.iempty
+  // nutcore.io.flush := nutcore_A.io.flush
+
+  io.icache <> nutcore.io.icache
+  io.dcache <> nutcore.io.dcache
+  io.dempty := nutcore.io.dempty
+  io.iempty := nutcore.io.iempty
+  nutcore.io.flush := io.flush
+
   cohMg.io.in <> nutcore.io.imem.mem
   nutcore.io.dmem.coh <> cohMg.io.out.coh
   xbar.io.in(0) <> cohMg.io.out.mem
   xbar.io.in(1) <> nutcore.io.dmem.mem
 
-  val axi2sb = Module(new AXI42SimpleBusConverter())
-  axi2sb.io.in <> io.frontend
-  nutcore.io.frontend <> axi2sb.io.out
+  //val axi2sb = Module(new AXI42SimpleBusConverter())
+  //axi2sb.io.in <> io.frontend
+  //nutcore.io.frontend <> axi2sb.io.out
 
   val memport = xbar.io.out.toMemPort()
   memport.resp.bits.data := DontCare

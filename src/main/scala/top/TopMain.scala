@@ -16,7 +16,7 @@
 
 package top
 
-import nutcore.NutCoreConfig
+import nutcore._
 import system.NutShell
 import device.{AXI4VGA}
 import sim.SimTop
@@ -39,8 +39,15 @@ class Top extends Module {
 class FireSim extends Module {
   val io = IO(new Bundle{})
   val nutshell = Module(new NutShell()(NutCoreConfig()))
+  val nutcore = Module(new NutCore_A()(NutCoreConfig()))
 
   nutshell.io := DontCare
+  nutcore.io := DontCare
+  nutshell.io.icache <> nutcore.io.icache
+  nutshell.io.dcache <> nutcore.io.dcache
+  nutcore.io.dempty := nutshell.io.dempty
+  nutcore.io.iempty := nutshell.io.iempty
+  nutshell.io.flush := nutcore.io.flush
   dontTouch(nutshell.io)
   val converter = Module(new AXI4WRAPConverter)
   nutshell.io.mem <> converter.io.fromCore
